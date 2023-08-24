@@ -11,10 +11,10 @@ class StatsServices {
 
     if (response.statusCode == 200) {
       var data = await jsonDecode(response.body);
-      debugPrint('ABAY SAALE $data');
+      debugPrint('JsonData $data');
 
       var mapData = WorldStatesModel.fromMap(data);
-      debugPrint('ABAY SAALE1 $mapData');
+      debugPrint('Data $mapData');
 
       return mapData;
     } else {
